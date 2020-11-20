@@ -18,6 +18,10 @@
     {
         
     }
+    public void PointerClick(object sender, PointerEventArgs e)
+    {
+        Debug.Log(e.target.name);
+    }
     public void PointerInside(object sender, PointerEventArgs e)
     {
         

@@ -560,6 +560,7 @@ namespace SimpleFileBrowser
 		public ListItem CreateItem()
 		{
 			FileBrowserItem item = (FileBrowserItem) Instantiate( itemPrefab, filesContainer, false );
+			BoxCollider _bc = (BoxCollider)item.gameObject.AddComponent(typeof(BoxCollider));
 			item.SetFileBrowser( this );
 			allItems.Add( item );
 
@@ -1337,6 +1338,8 @@ namespace SimpleFileBrowser
 
 			FileBrowserQuickLink quickLink = (FileBrowserQuickLink) Instantiate( quickLinkPrefab, quickLinksContainer, false );
 			quickLink.SetFileBrowser( this );
+			BoxCollider _bc = (BoxCollider)quickLink.gameObject.AddComponent(typeof(BoxCollider));
+ 			//_bc.center = Vector3.zero;
 
 			if( icon != null )
 				quickLink.SetQuickLink( icon, name, path );

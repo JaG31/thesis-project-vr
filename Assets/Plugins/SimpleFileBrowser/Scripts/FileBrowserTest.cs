@@ -28,6 +28,7 @@ public class FileBrowserTest : MonoBehaviour
 	
 	void Start()
 	{
+		FileBrowser.HideDialog();
 		// Set filters (optional)
 		// It is sufficient to set the filters just once (instead of each time before showing the file browser dialog), 
 		// if all the dialogs will be using the same filters
@@ -56,7 +57,7 @@ public class FileBrowserTest : MonoBehaviour
 		// onCancel event: not registered
 		// Save file/folder: file, Allow multiple selection: false
 		// Initial path: "C:\", Title: "Save As", submit button text: "Save"
-		// FileBrowser.ShowSaveDialog( null, null, false, false, "C:\\", "Save As", "Save" );
+		FileBrowser.ShowSaveDialog( null, null, false, false, "C:\\", "Save As", "Save" );
 
 		// Show a select folder dialog 
 		// onSuccess event: print the selected folder's path
@@ -106,6 +107,7 @@ public class FileBrowserTest : MonoBehaviour
 
 			// Read the bytes of the first file via FileBrowserHelpers
 			// Contrary to File.ReadAllBytes, this function works on Android 10+, as well
+			
 			contents = File.ReadAllText(file);
 			Debug.Log(contents);
 			AddTextToCanvas(contents, GameObject.Find("Canvas"));
