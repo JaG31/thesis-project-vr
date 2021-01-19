@@ -14,6 +14,17 @@ public class SimpleAttach : MonoBehaviour
         interactable = GetComponent<Interactable>();
     }
 
+    // private void Awake()
+    // {
+    //     // Check if Colider is in another GameObject
+    //     Collider collider = GetComponentInChildren<Collider>();
+    //     if (collider.gameObject != gameObject)
+    //     {
+    //         BreadboardInsertion cb = collider.gameObject.AddComponent<BreadboardInsertion>();
+    //         cb.Initialize(this);
+    //     }
+    // }
+
     private void onHandHoverBegin(Hand hand) {
         hand.ShowGrabHint();
     }
@@ -30,7 +41,6 @@ public class SimpleAttach : MonoBehaviour
         if (interactable.attachedToHand == null && grabType != GrabTypes.None) {
             hand.AttachObject(gameObject, grabType);
             hand.HoverLock(interactable);
-            hand.HideGrabHint();
 
         //Set the position of the object to just above the hole
         //this.gameObject.transform.position = new Vector3();
@@ -46,18 +56,17 @@ public class SimpleAttach : MonoBehaviour
         else if (isGrabEnding) {
             hand.DetachObject(gameObject);
             hand.HoverUnlock(interactable);
-            hand.HideGrabHint();
             grabOver = isGrabEnding;
         }
     }
-
-    void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
+        //Collider myCollider = collision.contacts[0].thisCollider;
         //Check for a match with the specific tag on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "BreadboardHoles" && grabOver)
         {
             //Set the position of the object to just above the hole
-            this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y + 0.01F, collision.gameObject.transform.position.z);
+            this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.02f, collision.gameObject.transform.position.z);
             //set the hole of breadboard to be the parent of the object
             //this.gameObject.transform.parent = collision.gameObject.transform;
             //Freeze position until it is grabbed again
@@ -66,6 +75,8 @@ public class SimpleAttach : MonoBehaviour
             grabOver = false;
         }
     }
+
+    
 
     //MAKE THE ONGRAB HANDLER RESET EVERYTHING
 

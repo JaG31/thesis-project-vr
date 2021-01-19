@@ -48,7 +48,7 @@ namespace Valve.VR.InteractionSystem
         protected Vector3 attachPosition;
         protected Quaternion attachRotation;
         protected Transform attachEaseInTransform;
-
+        protected RigidbodyConstraints originalConstraints;
 		public UnityEvent onPickUp;
         public UnityEvent onDetachFromHand;
         public HandEvent onHeldUpdate;
@@ -65,6 +65,14 @@ namespace Valve.VR.InteractionSystem
         //-------------------------------------------------
         protected virtual void Awake()
 		{
+            // Check if Colider is in another GameObject
+            Collider collider = GetComponentInChildren<Collider>();
+            if (collider.gameObject != gameObject)
+            {
+                BreadboardInsertion cb = collider.gameObject.AddComponent<BreadboardInsertion>();
+                cb.Initialize(this);
+            }
+
 			velocityEstimator = GetComponent<VelocityEstimator>();
             interactable = GetComponent<Interactable>();
 
@@ -72,6 +80,8 @@ namespace Valve.VR.InteractionSystem
 
             rigidbody = GetComponent<Rigidbody>();
             rigidbody.maxAngularVelocity = 50.0f;
+
+            originalConstraints = rigidbody.constraints;
 
 
             if(attachmentOffset != null)
@@ -155,7 +165,25 @@ namespace Valve.VR.InteractionSystem
 			attachPosition = transform.position;
 			attachRotation = transform.rotation;
 
+            rigidbody.constraints = originalConstraints;
+
 		}
+
+        public void OnCollisionEnter(Collision collision)
+        {
+            //Collider myCollider = collision.contacts[0].thisCollider;
+            //Check for a match with the specific tag on any GameObject that collides with your GameObject
+            if (collision.gameObject.tag == "BreadboardHoles" && !attached)
+            {
+                //Set the position of the object to just above the hole
+                this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.005f, collision.gameObject.transform.position.z);
+                //set the hole of breadboard to be the parent of the object
+                //this.gameObject.transform.parent = collision.gameObject.transform;
+                //Freeze position until it is grabbed again
+                var rigidBody = this.gameObject.GetComponent<Rigidbody>();
+                rigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
+            }
+        }
 
 
         //-------------------------------------------------
