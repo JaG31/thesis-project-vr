@@ -169,14 +169,14 @@ namespace Valve.VR.InteractionSystem
 
 		}
 
-        public void OnCollisionEnter(Collision collision)
+        public void OnTriggerEnter(Collider collision)
         {
             //Collider myCollider = collision.contacts[0].thisCollider;
             //Check for a match with the specific tag on any GameObject that collides with your GameObject
             if (collision.gameObject.tag == "BreadboardHoles" && !attached)
             {
                 //Set the position of the object to just above the hole
-                this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.005f, collision.gameObject.transform.position.z);
+                this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.03f, collision.gameObject.transform.position.z);
                 //set the hole of breadboard to be the parent of the object
                 //this.gameObject.transform.parent = collision.gameObject.transform;
                 //Freeze position until it is grabbed again

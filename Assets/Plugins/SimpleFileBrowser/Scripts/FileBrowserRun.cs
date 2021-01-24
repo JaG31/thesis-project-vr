@@ -5,7 +5,7 @@ using System.Collections;
 using SimpleFileBrowser;
 using System.IO;
 
-public class FileBrowserTest : MonoBehaviour
+public class FileBrowserRun : MonoBehaviour
 {
 	public static TextMesh AddTextToCanvas(string textString, GameObject canvasGameObject)
 	{
@@ -57,16 +57,16 @@ public class FileBrowserTest : MonoBehaviour
 		// onCancel event: not registered
 		// Save file/folder: file, Allow multiple selection: false
 		// Initial path: "C:\", Title: "Save As", submit button text: "Save"
-		FileBrowser.ShowSaveDialog( null, null, false, false, "C:\\", "Save As", "Save" );
+		FileBrowser.ShowSaveDialog( null, null, FileBrowser.PickMode.Files, false, "C:\\", "Screenshot.png", "Save As", "Save" );
 
 		// Show a select folder dialog 
 		// onSuccess event: print the selected folder's path
 		// onCancel event: print "Canceled"
 		// Load file/folder: folder, Allow multiple selection: false
 		// Initial path: default (Documents), Title: "Select Folder", submit button text: "Select"
-		 FileBrowser.ShowLoadDialog( ( paths ) => { Debug.Log( "Selected: " + paths[0] ); },
-		                            () => { Debug.Log( "Canceled" ); },
-		                            true, true, null, "Select Folder", "Select" );
+		FileBrowser.ShowLoadDialog( ( paths ) => { Debug.Log( "Selected: " + paths[0] ); },
+								   () => { Debug.Log( "Canceled" ); },
+								   FileBrowser.PickMode.Folders, false, null, null, "Select Folder", "Select" );
 
 		// Coroutine example
 		StartCoroutine( ShowLoadDialogCoroutine() );
@@ -77,7 +77,7 @@ public class FileBrowserTest : MonoBehaviour
 		// Show a load file dialog and wait for a response from user
 		// Load file/folder: file, Allow multiple selection: true
 		// Initial path: default (Documents), Title: "Load File", submit button text: "Load"
-		yield return FileBrowser.WaitForLoadDialog( false, true, null, "Load File", "Load" );
+		yield return FileBrowser.WaitForLoadDialog( FileBrowser.PickMode.FilesAndFolders, true, null, null, "Load Files and Folders", "Load" );
 
 		// Dialog is closed
 		// Print whether the user has selected some files/folders or cancelled the operation (FileBrowser.Success)

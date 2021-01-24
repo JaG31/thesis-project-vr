@@ -88,6 +88,24 @@ namespace SimpleFileBrowser
 		#region Pointer Events
 		public void OnPointerClick( PointerEventData eventData )
 		{
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WSA || UNITY_WSA_10_0
+			if( eventData.button == PointerEventData.InputButton.Middle )
+				return;
+			else if( eventData.button == PointerEventData.InputButton.Right )
+			{
+				// First, select the item
+				if( !isSelected )
+				{
+					prevClickTime = 0f;
+					fileBrowser.OnItemSelected( this, false );
+				}
+
+				// Then, show the context menu
+				fileBrowser.OnContextMenuTriggered();
+				return;
+			}
+#endif
+
 			if( Time.realtimeSinceStartup - prevClickTime < DOUBLE_CLICK_TIME )
 			{
 				prevClickTime = 0f;
@@ -102,11 +120,21 @@ namespace SimpleFileBrowser
 
 		public void OnPointerDown( PointerEventData eventData )
 		{
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WSA || UNITY_WSA_10_0
+			if( eventData.button != PointerEventData.InputButton.Left )
+				return;
+#endif
+
 			pressTime = Time.realtimeSinceStartup;
 		}
 
 		public void OnPointerUp( PointerEventData eventData )
 		{
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WSA || UNITY_WSA_10_0
+			if( eventData.button != PointerEventData.InputButton.Left )
+				return;
+#endif
+
 			if( pressTime == Mathf.Infinity )
 			{
 				// We have activated MultiSelectionToggleSelectionMode with this press, processing the click would result in
@@ -140,29 +168,32 @@ namespace SimpleFileBrowser
 			this.isSelected = isSelected;
 			background.color = isSelected ? fileBrowser.selectedFileColor : fileBrowser.normalFileColor;
 
-			if( fileBrowser.MultiSelectionToggleSelectionMode )
+			if( multiSelectionToggle ) // Quick links don't have multi selection toggle
 			{
-				if( !multiSelectionToggle.gameObject.activeSelf )
+				if( fileBrowser.MultiSelectionToggleSelectionMode )
 				{
-					multiSelectionToggle.gameObject.SetActive( true );
+					if( !multiSelectionToggle.gameObject.activeSelf )
+					{
+						multiSelectionToggle.gameObject.SetActive( true );
 
-					Vector2 shiftAmount = new Vector2( multiSelectionToggle.rectTransform.sizeDelta.x, 0f );
+						Vector2 shiftAmount = new Vector2( multiSelectionToggle.rectTransform.sizeDelta.x, 0f );
+						icon.rectTransform.anchoredPosition += shiftAmount;
+						nameText.rectTransform.anchoredPosition += shiftAmount;
+					}
+
+					multiSelectionToggle.sprite = isSelected ? fileBrowser.multiSelectionToggleOnIcon : fileBrowser.multiSelectionToggleOffIcon;
+				}
+				else if( multiSelectionToggle.gameObject.activeSelf )
+				{
+					multiSelectionToggle.gameObject.SetActive( false );
+
+					Vector2 shiftAmount = new Vector2( -multiSelectionToggle.rectTransform.sizeDelta.x, 0f );
 					icon.rectTransform.anchoredPosition += shiftAmount;
 					nameText.rectTransform.anchoredPosition += shiftAmount;
+
+					// Clicking a file shortly after disabling MultiSelectionToggleSelectionMode does nothing, this workaround fixes that issue
+					prevClickTime = 0f;
 				}
-
-				multiSelectionToggle.sprite = isSelected ? fileBrowser.multiSelectionToggleOnIcon : fileBrowser.multiSelectionToggleOffIcon;
-			}
-			else if( multiSelectionToggle.gameObject.activeSelf )
-			{
-				multiSelectionToggle.gameObject.SetActive( false );
-
-				Vector2 shiftAmount = new Vector2( -multiSelectionToggle.rectTransform.sizeDelta.x, 0f );
-				icon.rectTransform.anchoredPosition += shiftAmount;
-				nameText.rectTransform.anchoredPosition += shiftAmount;
-
-				// Clicking a file shortly after disabling MultiSelectionToggleSelectionMode does nothing, this workaround fixes that issue
-				prevClickTime = 0f;
 			}
 		}
 
