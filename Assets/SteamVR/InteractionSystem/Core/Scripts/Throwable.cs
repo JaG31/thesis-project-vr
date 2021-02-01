@@ -169,7 +169,7 @@ namespace Valve.VR.InteractionSystem
 
 		}
 
-        public void OnTriggerEnter(Collider collision)
+        public void OnTriggerStay(Collider collision)
         {
             //Collider myCollider = collision.contacts[0].thisCollider;
             //Check for a match with the specific tag on any GameObject that collides with your GameObject

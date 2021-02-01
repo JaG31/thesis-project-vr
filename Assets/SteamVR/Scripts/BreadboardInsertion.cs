@@ -11,8 +11,8 @@ public class BreadboardInsertion : MonoBehaviour
      {
         _listener = l;
      }
-     void OnTriggerEnter(Collider collision)
+     void OnTriggerStay(Collider collision)
      {
-         _listener.OnTriggerEnter(collision);
+         _listener.OnTriggerStay(collision);
      }
  }
