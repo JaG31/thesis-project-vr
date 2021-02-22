@@ -176,7 +176,14 @@ namespace Valve.VR.InteractionSystem
             if (collision.gameObject.tag == "BreadboardHoles" && !attached)
             {
                 //Set the position of the object to just above the hole
-                this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.03f, collision.gameObject.transform.position.z);
+                if (this.gameObject.name == "LED") {
+                    this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.03f, collision.gameObject.transform.position.z);
+                }
+                if (this.gameObject.name == "wire") {
+                    this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.001f, collision.gameObject.transform.position.z);
+                }
+                
+                
                 //set the hole of breadboard to be the parent of the object
                 //this.gameObject.transform.parent = collision.gameObject.transform;
                 //Freeze position until it is grabbed again
