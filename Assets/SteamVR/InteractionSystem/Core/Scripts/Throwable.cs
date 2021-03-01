@@ -42,6 +42,7 @@ namespace Valve.VR.InteractionSystem
 
 
 
+        protected GameObject currentHole;
 		protected VelocityEstimator velocityEstimator;
         protected bool attached = false;
         protected float attachTime;
@@ -171,18 +172,24 @@ namespace Valve.VR.InteractionSystem
 
         public void OnTriggerStay(Collider collision)
         {
+            
             //Collider myCollider = collision.contacts[0].thisCollider;
             //Check for a match with the specific tag on any GameObject that collides with your GameObject
-            if (collision.gameObject.tag == "BreadboardHoles" && !attached)
+            if (collision.gameObject.tag == "BreadboardHoles" && attached) {
+                currentHole = collision.gameObject;
+                currentHole.GetComponent<Renderer>().material.SetColor("_Color", Color.yellow);
+            }
+
+            else if (currentHole.tag == "BreadboardHoles" && !attached)
             {
                 //Try to change colour of breadboard hole on contact with collider
                 //
                 //Set the position of the object to just above the hole
                 if (this.gameObject.name == "LED") {
-                    this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.03f, collision.gameObject.transform.position.z);
+                    this.gameObject.transform.position = new Vector3(currentHole.transform.position.x + 0.01f, currentHole.transform.position.y - 0.03f, currentHole.transform.position.z);
                 }
                 if (this.gameObject.name == "wire") {
-                    this.gameObject.transform.position = new Vector3(collision.gameObject.transform.position.x + 0.01f, collision.gameObject.transform.position.y - 0.001f, collision.gameObject.transform.position.z);
+                    this.gameObject.transform.position = new Vector3(currentHole.transform.position.x + 0.01f, currentHole.transform.position.y - 0.001f, currentHole.transform.position.z);
                 }
                 
                 
@@ -191,10 +198,6 @@ namespace Valve.VR.InteractionSystem
                 //Freeze position until it is grabbed again
                 var rigidBody = this.gameObject.GetComponent<Rigidbody>();
                 rigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY;
-            }
-
-            else if (collision.gameObject.tag == "BreadboardHoles" && attached) {
-                collision.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.yellow);
             }
         }
 
