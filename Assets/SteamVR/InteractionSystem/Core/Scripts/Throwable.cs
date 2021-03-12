@@ -188,8 +188,11 @@ namespace Valve.VR.InteractionSystem
                 if (this.gameObject.name == "LED") {
                     this.gameObject.transform.position = new Vector3(currentHole.transform.position.x + 0.01f, currentHole.transform.position.y - 0.03f, currentHole.transform.position.z);
                 }
-                if (this.gameObject.name == "wire") {
-                    this.gameObject.transform.position = new Vector3(currentHole.transform.position.x + 0.01f, currentHole.transform.position.y - 0.001f, currentHole.transform.position.z);
+                // if (this.gameObject.name == "wire") {
+                //     this.gameObject.transform.position = new Vector3(currentHole.transform.position.x + 0.01f, currentHole.transform.position.y - 0.001f, currentHole.transform.position.z);
+                // }
+                if (this.gameObject.name == "Connector1" || this.gameObject.name == "Connector2") {
+                    this.gameObject.transform.position = new Vector3(currentHole.transform.position.x, currentHole.transform.position.y - 0.001f, currentHole.transform.position.z);
                 }
                 
                 
