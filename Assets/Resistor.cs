@@ -17,7 +17,7 @@ public class Resistor : MonoBehaviour {
             bridge.position = (connector1.position + connector2.position) / 2f;
 
             // increase the height of the bridge to span the distance between the connectors
-            bridge.localScale = new Vector3(1f, 1f, bridgeDirection.magnitude);
+            bridge.localScale = new Vector3(1f, 1f, bridgeDirection.magnitude*5);
         } else {
             Debug.Log("Some of the required components are null");
         }
