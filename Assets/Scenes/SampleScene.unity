@@ -797,7 +797,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &30009936
 MonoBehaviour:
@@ -52794,7 +52794,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1646768321
 MonoBehaviour:
@@ -70163,6 +70163,8 @@ MonoBehaviour:
   connector1: {fileID: 874179760}
   connector2: {fileID: 1331603488}
   bridge: {fileID: 356330225}
+  connector1Prefab: {fileID: 1646768314}
+  connector2Prefab: {fileID: 30009929}
 --- !u!1 &1003769570704551852
 GameObject:
   m_ObjectHideFlags: 0
