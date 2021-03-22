@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 432421473702133898}
   - component: {fileID: 432421473702133943}
   m_Layer: 10
-  m_Name: Anode
-  m_TagString: Untagged
+  m_Name: Lead
+  m_TagString: Lead
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

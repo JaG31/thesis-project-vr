@@ -21,7 +21,6 @@ public class Resistor : MonoBehaviour {
             // increase the height of the bridge to span the distance between the connectors
             Vector3 largeScale = new Vector3(1,1,1);
             //Debug.Log(Vector3.Distance(bridge.localScale, largeScale));
-            Debug.Log(bridgeDirection.magnitude*5);
             if (bridgeDirection.magnitude*5 > 1) {
                 
             }
