@@ -13,6 +13,7 @@ public class LED : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
+        renderer.material.SetColor("_Color", Color.clear);
     }
 
     // Update is called once per frame
@@ -30,7 +31,7 @@ public class LED : MonoBehaviour
         Debug.Log(type);
         if (type == "Anode") {
             anodeColumn = breadboardHole.gameObject.transform.parent.GetComponent<Column>();
-            if (anodeColumn.voltage > 2.5) {
+            if (anodeColumn.voltage > 0.1) {
                 renderer.material.SetColor("_Color", Color.red);
             }
             else {

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cathode : MonoBehaviour
+public class ResistorConnector1 : MonoBehaviour
 {
     // Start is called before the first frame update
-    public LED LED;
+    public Resistor resistor;
     void Start()
     {
-        LED = transform.parent.GetComponent<LED>();
+        resistor = transform.parent.GetComponent<Resistor>();
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class Cathode : MonoBehaviour
 
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "BreadboardHoles") {
-            LED.leadInserted(gameObject.name, other.gameObject);
+            resistor.leadInserted(gameObject.name, other.gameObject);
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Anode : MonoBehaviour
 {
     // Start is called before the first frame update
-    LED LED;
+    public LED LED;
     void Start()
     {
         LED = transform.parent.GetComponent<LED>();

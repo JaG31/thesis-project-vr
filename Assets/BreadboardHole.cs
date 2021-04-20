@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class BreadboardHole : MonoBehaviour
 {
+    public GameObject collided;
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "Lead") {
-            transform.parent.GetComponent<Column>().CollisionDetected(this);
+            collided = other.gameObject;
+            transform.parent.GetComponent<Column>().CollisionDetected(other.gameObject);
         }
+    }
 
-        if (other.gameObject.tag == "Power") {
-            transform.parent.GetComponent<Column>().PowerColumn(this);
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.tag == "Lead") {
+            collided = null;
+            transform.parent.GetComponent<Column>().CollisionUnDetected(other.gameObject);
         }
     }
 }

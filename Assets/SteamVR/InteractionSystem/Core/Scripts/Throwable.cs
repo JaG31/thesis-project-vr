@@ -175,12 +175,12 @@ namespace Valve.VR.InteractionSystem
             
             //Collider myCollider = collision.contacts[0].thisCollider;
             //Check for a match with the specific tag on any GameObject that collides with your GameObject
-            if (collision.gameObject.tag == "BreadboardHoles" && attached) {
+            if (collision.gameObject.tag == "BreadboardHoles" || collision.gameObject.tag == "Battery" && attached) {
                 currentHole = collision.gameObject;
                 currentHole.GetComponent<Renderer>().material.SetColor("_Color", Color.yellow);
             }
 
-            else if (currentHole.tag == "BreadboardHoles" && !attached)
+            else if (currentHole != null && currentHole.tag == "BreadboardHoles" || collision.gameObject.tag == "Battery" && !attached)
             {
                 //Try to change colour of breadboard hole on contact with collider
                 //
@@ -205,8 +205,10 @@ namespace Valve.VR.InteractionSystem
         }
 
         private void OnTriggerExit(Collider other) {
-            if (other.gameObject.tag == "BreadboardHoles") {
+            if (other.gameObject.tag == "BreadboardHoles" || other.gameObject.tag == "Battery") {
                 other.gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.black);
+                var rigidBody = this.gameObject.GetComponent<Rigidbody>();
+                rigidBody.constraints = RigidbodyConstraints.None;
             }
         }
 

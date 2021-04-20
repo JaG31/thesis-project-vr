@@ -9,6 +9,8 @@ TagManager:
   - BreadboardHoles
   - Component
   - Lead
+  - Power
+  - Battery
   layers:
   - Default
   - TransparentFX
@@ -21,8 +23,8 @@ TagManager:
   - BreadboardHoles
   - Circuitry Components
   - Leads
-  - 
-  - 
+  - Power
+  - Battery
   - 
   - 
   - 

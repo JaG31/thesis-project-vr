@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class PositiveRow : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float voltage;
-    void Start()
-    {
+    private Collider collider;
+    private void Start() {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void Update() {
+        
+    }
+
+    public void CollisionDetected(BreadboardHole childScript) {
+        
+    }
+
+    public void PowerColumn(BreadboardHole childScript) {
+        //Debug.Log(this.gameObject.name + " is powered");
+    }
+
+    private void OnTriggerStay(Collider other) {
         
     }
 }

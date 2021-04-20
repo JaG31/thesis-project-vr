@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1309845}
   - component: {fileID: 1309849}
   - component: {fileID: 1309850}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (4)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -298,6 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2269172
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,9 +309,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2269173}
   - component: {fileID: 2269174}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Positive Row (Top)
-  m_TagString: Untagged
+  m_TagString: Power
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,6 +368,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &4267287
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +386,7 @@ GameObject:
   - component: {fileID: 4267289}
   - component: {fileID: 4267293}
   - component: {fileID: 4267294}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (18)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -544,6 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &7251111
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &7251114
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -731,10 +737,9 @@ GameObject:
   m_Component:
   - component: {fileID: 12478078}
   - component: {fileID: 12478079}
-  - component: {fileID: 12478080}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Positive Row (Bottom)
-  m_TagString: Untagged
+  m_TagString: Power
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -787,23 +792,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 12478077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18aa6814ae255634f8eb95b182f04337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  voltage: 0
---- !u!114 &12478080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12478077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbc7a3627e02ebd4ca0dce2c1738c8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &19736129
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,6 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &30146867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!114 &30215018 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114000013689746302, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -1218,6 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &32308843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1395,6 +1393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &35301275
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1539,7 +1538,7 @@ GameObject:
   - component: {fileID: 37599131}
   - component: {fileID: 37599135}
   - component: {fileID: 37599136}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (10)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -1701,6 +1700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &46254156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,7 +1716,7 @@ GameObject:
   - component: {fileID: 46254158}
   - component: {fileID: 46254162}
   - component: {fileID: 46254163}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (11)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -1878,6 +1878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &47126391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1926,6 +1927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &47126394
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2070,7 +2072,7 @@ GameObject:
   - component: {fileID: 49933561}
   - component: {fileID: 49933564}
   - component: {fileID: 49933565}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (10)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -2232,6 +2234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &60812738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,6 +2284,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &63572344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,6 +2464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &64901793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,6 +2642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &68342997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,6 +2820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &68855828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,6 +2869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &68855831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3166,6 +3176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &74398130
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,6 +3354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &79250014
 GameObject:
   m_ObjectHideFlags: 0
@@ -3520,6 +3532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &80952114
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +3581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &80952117
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3745,6 +3759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &81265604
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3922,6 +3937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &83041868
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4228,6 +4244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &91185094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011817404238, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -4423,6 +4440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &93095692
 GameObject:
   m_ObjectHideFlags: 0
@@ -4471,6 +4489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &93095695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4615,7 +4634,7 @@ GameObject:
   - component: {fileID: 93795424}
   - component: {fileID: 93795427}
   - component: {fileID: 93795428}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (14)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -4777,6 +4796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!20 &93839172 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9,
@@ -4960,6 +4980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &101059820
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,6 +5158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &105072455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,7 +5250,7 @@ RectTransform:
   m_LocalScale: {x: 0.011, y: 0.012, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5284,6 +5306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &111679713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5461,6 +5486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &113079958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5638,6 +5664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &131328406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010113651986, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -5873,6 +5900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &134985661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5888,7 +5916,7 @@ GameObject:
   - component: {fileID: 134985663}
   - component: {fileID: 134985667}
   - component: {fileID: 134985668}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (23)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -6050,6 +6078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &135854296
 GameObject:
   m_ObjectHideFlags: 0
@@ -6098,6 +6127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &135854299
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6404,6 +6434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &137185853
 GameObject:
   m_ObjectHideFlags: 0
@@ -6581,6 +6612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &140594730
 GameObject:
   m_ObjectHideFlags: 0
@@ -6758,6 +6790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &148749772
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,6 +6840,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &153171046
 GameObject:
   m_ObjectHideFlags: 0
@@ -6855,6 +6891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &153171049
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7161,6 +7198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &165555131 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1194639342920472, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -7180,6 +7218,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 25.262737, y: 31.667301, z: 6.434714}
   m_Center: {x: -16.835611, y: 0.36579704, z: -2.7173579}
+--- !u!1001 &171635929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.474
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8831
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7416
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711558, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e86ee65d84d24204e994bac54b8bf9e9, type: 3}
 --- !u!1 &174318633
 GameObject:
   m_ObjectHideFlags: 0
@@ -7357,6 +7464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &175587138
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,6 +7514,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &177697569
 GameObject:
   m_ObjectHideFlags: 0
@@ -7454,6 +7565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &177697572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7760,6 +7872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &202305237
 GameObject:
   m_ObjectHideFlags: 0
@@ -7809,6 +7922,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &216690819
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,6 +8102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &220064147
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,6 +8152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &224809773 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011137665842, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -8142,9 +8262,9 @@ GameObject:
   m_Component:
   - component: {fileID: 227218452}
   - component: {fileID: 227218453}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Negative Row (Top)
-  m_TagString: Untagged
+  m_TagString: Power
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8201,6 +8321,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &228658127 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
@@ -8282,6 +8405,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &232677563
 GameObject:
   m_ObjectHideFlags: 0
@@ -8330,6 +8456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &232677566
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8508,6 +8635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &234506736
 GameObject:
   m_ObjectHideFlags: 0
@@ -8523,7 +8653,7 @@ GameObject:
   - component: {fileID: 234506738}
   - component: {fileID: 234506742}
   - component: {fileID: 234506743}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (10)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -8685,6 +8815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &249862500
 GameObject:
   m_ObjectHideFlags: 0
@@ -8733,6 +8864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &249862503
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8877,7 +9009,7 @@ GameObject:
   - component: {fileID: 255662726}
   - component: {fileID: 255662730}
   - component: {fileID: 255662731}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (16)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -9039,6 +9171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &260488186
 GameObject:
   m_ObjectHideFlags: 0
@@ -9216,6 +9349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1001 &269065848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9426,7 +9560,7 @@ PrefabInstance:
     - target: {fileID: 224000013577827562, guid: 9ea2606f8fddead46aabb7adb3d8d434,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 224000013577827562, guid: 9ea2606f8fddead46aabb7adb3d8d434,
         type: 3}
@@ -9687,6 +9821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &275715893
 GameObject:
   m_ObjectHideFlags: 0
@@ -9735,6 +9870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &275715896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9913,6 +10049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &285483284
 GameObject:
   m_ObjectHideFlags: 0
@@ -9928,7 +10067,7 @@ GameObject:
   - component: {fileID: 285483286}
   - component: {fileID: 285483290}
   - component: {fileID: 285483291}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (15)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -10090,6 +10229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &287765636
 GameObject:
   m_ObjectHideFlags: 0
@@ -10138,6 +10278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &287765639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10282,7 +10423,7 @@ GameObject:
   - component: {fileID: 291810810}
   - component: {fileID: 291810814}
   - component: {fileID: 291810815}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -10444,6 +10585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &296318560
 GameObject:
   m_ObjectHideFlags: 0
@@ -10621,6 +10763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &298795477
 GameObject:
   m_ObjectHideFlags: 0
@@ -10669,6 +10812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &298795480
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10975,6 +11119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &303004732
 GameObject:
   m_ObjectHideFlags: 0
@@ -11152,6 +11297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &305045608
 GameObject:
   m_ObjectHideFlags: 0
@@ -11167,7 +11313,7 @@ GameObject:
   - component: {fileID: 305045610}
   - component: {fileID: 305045614}
   - component: {fileID: 305045615}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (6)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -11329,6 +11475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &315666216
 GameObject:
   m_ObjectHideFlags: 0
@@ -11506,6 +11653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &316011114
 GameObject:
   m_ObjectHideFlags: 0
@@ -11554,6 +11702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &316011117
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11731,6 +11880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &321551652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12037,6 +12187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &325953441
 GameObject:
   m_ObjectHideFlags: 0
@@ -12086,6 +12237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &341776401
 GameObject:
   m_ObjectHideFlags: 0
@@ -12134,6 +12288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &341776404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12440,6 +12595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &352541292
 GameObject:
   m_ObjectHideFlags: 0
@@ -12547,7 +12703,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 1, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &358532036
 GameObject:
@@ -12726,6 +12882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &358936836
 GameObject:
   m_ObjectHideFlags: 0
@@ -12774,6 +12931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &358936839
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13080,6 +13238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &382290006
 GameObject:
   m_ObjectHideFlags: 0
@@ -13128,6 +13287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &382290009
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13305,6 +13465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &384906974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13611,6 +13772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &392705507
 GameObject:
   m_ObjectHideFlags: 0
@@ -13788,6 +13950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &397265174
 GameObject:
   m_ObjectHideFlags: 0
@@ -13965,6 +14128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &399260327
 GameObject:
   m_ObjectHideFlags: 0
@@ -14013,6 +14177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &399260330
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14319,6 +14484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &406722644
 GameObject:
   m_ObjectHideFlags: 0
@@ -14496,6 +14662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &416218952
 GameObject:
   m_ObjectHideFlags: 0
@@ -14511,7 +14678,7 @@ GameObject:
   - component: {fileID: 416218954}
   - component: {fileID: 416218958}
   - component: {fileID: 416218959}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -14673,6 +14840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &419737632
 GameObject:
   m_ObjectHideFlags: 0
@@ -14850,6 +15018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &421533535
 GameObject:
   m_ObjectHideFlags: 0
@@ -15027,6 +15196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &444149062
 GameObject:
   m_ObjectHideFlags: 0
@@ -15204,6 +15374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &447594043
 GameObject:
   m_ObjectHideFlags: 0
@@ -15219,7 +15390,7 @@ GameObject:
   - component: {fileID: 447594046}
   - component: {fileID: 447594049}
   - component: {fileID: 447594050}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (5)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -15381,6 +15552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &451987722
 GameObject:
   m_ObjectHideFlags: 0
@@ -15396,7 +15568,7 @@ GameObject:
   - component: {fileID: 451987725}
   - component: {fileID: 451987728}
   - component: {fileID: 451987729}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (24)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -15558,6 +15730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &453455740
 GameObject:
   m_ObjectHideFlags: 0
@@ -15606,6 +15779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &453455743
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15912,6 +16086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &469810078
 GameObject:
   m_ObjectHideFlags: 0
@@ -16089,6 +16264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!4 &471586474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c3dc70573e667b64a87ede17b9ab8ac9,
@@ -16110,7 +16286,7 @@ GameObject:
   - component: {fileID: 479275268}
   - component: {fileID: 479275272}
   - component: {fileID: 479275273}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (16)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -16272,6 +16448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &482444851
 GameObject:
   m_ObjectHideFlags: 0
@@ -16449,6 +16626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &486254273
 GameObject:
   m_ObjectHideFlags: 0
@@ -16497,6 +16675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &486254276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16675,6 +16854,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &488542625
 GameObject:
   m_ObjectHideFlags: 0
@@ -16690,7 +16872,7 @@ GameObject:
   - component: {fileID: 488542627}
   - component: {fileID: 488542631}
   - component: {fileID: 488542632}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (2)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -16852,6 +17034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &499585508
 GameObject:
   m_ObjectHideFlags: 0
@@ -16901,6 +17084,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1001 &503328793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17033,6 +17219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &506551038
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17210,6 +17397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &506628397
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17339,6 +17527,80 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!1001 &519489340
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8831
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7416
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210553649415711553, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: breadboard
+      value: 
+      objectReference: {fileID: 786380860}
+    - target: {fileID: 9210553649415711558, guid: e86ee65d84d24204e994bac54b8bf9e9,
+        type: 3}
+      propertyPath: m_Name
+      value: Wire (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e86ee65d84d24204e994bac54b8bf9e9, type: 3}
 --- !u!1 &524663547
 GameObject:
   m_ObjectHideFlags: 0
@@ -17387,6 +17649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &524663550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17693,6 +17956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &535266110
 GameObject:
   m_ObjectHideFlags: 0
@@ -17870,6 +18134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &535343974
 GameObject:
   m_ObjectHideFlags: 0
@@ -17918,6 +18183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &535343977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18095,6 +18361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &539985920
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18272,6 +18539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &551929952
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18416,7 +18684,7 @@ GameObject:
   - component: {fileID: 574481460}
   - component: {fileID: 574481464}
   - component: {fileID: 574481465}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (7)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -18578,6 +18846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &575407485
 GameObject:
   m_ObjectHideFlags: 0
@@ -18626,6 +18895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &575407488
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18804,6 +19074,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &584096170
 GameObject:
   m_ObjectHideFlags: 0
@@ -18819,7 +19092,7 @@ GameObject:
   - component: {fileID: 584096172}
   - component: {fileID: 584096176}
   - component: {fileID: 584096177}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (22)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -18981,6 +19254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &603221178
 GameObject:
   m_ObjectHideFlags: 0
@@ -19158,6 +19432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &603656229
 GameObject:
   m_ObjectHideFlags: 0
@@ -19207,6 +19482,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &603908339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012001667450, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -19352,6 +19630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &611079089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19658,6 +19937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &614711814
 GameObject:
   m_ObjectHideFlags: 0
@@ -19707,6 +19987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &619383044
 GameObject:
   m_ObjectHideFlags: 0
@@ -19884,6 +20167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &619821738
 GameObject:
   m_ObjectHideFlags: 0
@@ -19933,6 +20217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &624486162
 GameObject:
   m_ObjectHideFlags: 0
@@ -19948,7 +20235,7 @@ GameObject:
   - component: {fileID: 624486165}
   - component: {fileID: 624486168}
   - component: {fileID: 624486169}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (18)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -20110,6 +20397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &625106969
 GameObject:
   m_ObjectHideFlags: 0
@@ -20158,6 +20446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &625106972
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20336,6 +20625,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &629399598
 GameObject:
   m_ObjectHideFlags: 0
@@ -20384,6 +20676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &629399601
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20528,7 +20821,7 @@ GameObject:
   - component: {fileID: 633991657}
   - component: {fileID: 633991661}
   - component: {fileID: 633991662}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (2)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -20690,6 +20983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &640108531
 GameObject:
   m_ObjectHideFlags: 0
@@ -20738,6 +21032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &640108534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20882,7 +21177,7 @@ GameObject:
   - component: {fileID: 645178576}
   - component: {fileID: 645178580}
   - component: {fileID: 645178581}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (14)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -21044,6 +21339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &645494763
 GameObject:
   m_ObjectHideFlags: 0
@@ -21221,6 +21517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &650468453
 GameObject:
   m_ObjectHideFlags: 0
@@ -21270,6 +21567,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &651116077
 GameObject:
   m_ObjectHideFlags: 0
@@ -21318,6 +21618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &651116080
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21496,6 +21797,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &661756068
 GameObject:
   m_ObjectHideFlags: 0
@@ -21673,6 +21977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &664634374
 GameObject:
   m_ObjectHideFlags: 0
@@ -21688,7 +21993,7 @@ GameObject:
   - component: {fileID: 664634376}
   - component: {fileID: 664634380}
   - component: {fileID: 664634381}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (14)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -21850,6 +22155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &667772991
 GameObject:
   m_ObjectHideFlags: 0
@@ -21865,7 +22171,7 @@ GameObject:
   - component: {fileID: 667772993}
   - component: {fileID: 667772997}
   - component: {fileID: 667772998}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (15)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -22027,6 +22333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &675146814
 GameObject:
   m_ObjectHideFlags: 0
@@ -22204,6 +22511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &676395355
 GameObject:
   m_ObjectHideFlags: 0
@@ -22381,6 +22689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &678307703
 GameObject:
   m_ObjectHideFlags: 0
@@ -22558,6 +22867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &689815439
 GameObject:
   m_ObjectHideFlags: 0
@@ -22573,7 +22883,7 @@ GameObject:
   - component: {fileID: 689815441}
   - component: {fileID: 689815445}
   - component: {fileID: 689815446}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (3)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -22735,6 +23045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &691928078
 GameObject:
   m_ObjectHideFlags: 0
@@ -22750,7 +23061,7 @@ GameObject:
   - component: {fileID: 691928080}
   - component: {fileID: 691928084}
   - component: {fileID: 691928085}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (1)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -22912,6 +23223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &703943776
 GameObject:
   m_ObjectHideFlags: 0
@@ -22960,6 +23272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &703943779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23229,6 +23542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &721615079
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23535,6 +23849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &730996338
 GameObject:
   m_ObjectHideFlags: 0
@@ -23712,6 +24027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &736506204
 GameObject:
   m_ObjectHideFlags: 0
@@ -23761,6 +24077,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &737735562
 GameObject:
   m_ObjectHideFlags: 0
@@ -23938,6 +24257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &737981227
 GameObject:
   m_ObjectHideFlags: 0
@@ -23986,6 +24306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &737981230
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24163,6 +24484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &738289267
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24307,7 +24629,7 @@ GameObject:
   - component: {fileID: 738473255}
   - component: {fileID: 738473259}
   - component: {fileID: 738473260}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (3)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -24469,6 +24791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &739147794
 GameObject:
   m_ObjectHideFlags: 0
@@ -24518,6 +24841,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &740630175
 GameObject:
   m_ObjectHideFlags: 0
@@ -24567,6 +24893,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &743280278
 GameObject:
   m_ObjectHideFlags: 0
@@ -24616,6 +24945,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &743779892
 GameObject:
   m_ObjectHideFlags: 0
@@ -24631,7 +24963,7 @@ GameObject:
   - component: {fileID: 743779895}
   - component: {fileID: 743779898}
   - component: {fileID: 743779899}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (6)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -24793,6 +25125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &746360070
 GameObject:
   m_ObjectHideFlags: 0
@@ -24841,6 +25174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &746360073
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25018,6 +25352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &748002941
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25324,6 +25659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &750389959
 GameObject:
   m_ObjectHideFlags: 0
@@ -25372,6 +25708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &750389962
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25516,7 +25853,7 @@ GameObject:
   - component: {fileID: 754057880}
   - component: {fileID: 754057883}
   - component: {fileID: 754057884}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (22)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -25678,6 +26015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &754550533
 GameObject:
   m_ObjectHideFlags: 0
@@ -25727,6 +26065,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &754986968
 GameObject:
   m_ObjectHideFlags: 0
@@ -25742,7 +26083,7 @@ GameObject:
   - component: {fileID: 754986970}
   - component: {fileID: 754986974}
   - component: {fileID: 754986975}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (8)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -25904,6 +26245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &755871721
 GameObject:
   m_ObjectHideFlags: 0
@@ -26081,6 +26423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &756017751
 GameObject:
   m_ObjectHideFlags: 0
@@ -26129,6 +26472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &756017754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26306,6 +26650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &756076154
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26483,6 +26828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &758688549
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26627,7 +26973,7 @@ GameObject:
   - component: {fileID: 760904589}
   - component: {fileID: 760904593}
   - component: {fileID: 760904594}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (19)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -26789,6 +27135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &761511913
 GameObject:
   m_ObjectHideFlags: 0
@@ -26838,6 +27185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &771394255
 GameObject:
   m_ObjectHideFlags: 0
@@ -26887,6 +27237,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &786063007
 GameObject:
   m_ObjectHideFlags: 0
@@ -27064,6 +27417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &786380859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c3dc70573e667b64a87ede17b9ab8ac9,
@@ -27082,6 +27436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997256285fe9fd34bb2f1187eac7aadc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circuitCompleted: 0
 --- !u!54 &786380862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27152,7 +27507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4836093174739976, guid: 247e5b33a1b1dba43a82e14ad7191756, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4836093174739976, guid: 247e5b33a1b1dba43a82e14ad7191756, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -27227,6 +27582,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &797697147
 GameObject:
   m_ObjectHideFlags: 0
@@ -27242,7 +27600,7 @@ GameObject:
   - component: {fileID: 797697149}
   - component: {fileID: 797697153}
   - component: {fileID: 797697154}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (13)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -27404,6 +27762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &798222144
 GameObject:
   m_ObjectHideFlags: 0
@@ -27581,6 +27940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &801099339
 GameObject:
   m_ObjectHideFlags: 0
@@ -27596,7 +27956,7 @@ GameObject:
   - component: {fileID: 801099342}
   - component: {fileID: 801099345}
   - component: {fileID: 801099346}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (12)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -27758,6 +28118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &804666752
 GameObject:
   m_ObjectHideFlags: 0
@@ -27806,6 +28167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &804666755
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27983,6 +28345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &806064408
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28160,6 +28523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &810466205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28337,6 +28701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &813213219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28643,6 +29008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &824036925
 GameObject:
   m_ObjectHideFlags: 0
@@ -28691,6 +29057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &824036928
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -28868,6 +29235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &826114344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29045,6 +29413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &828394601
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29189,7 +29558,7 @@ GameObject:
   - component: {fileID: 845612385}
   - component: {fileID: 845612389}
   - component: {fileID: 845612390}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (18)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -29351,6 +29720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &852880543
 GameObject:
   m_ObjectHideFlags: 0
@@ -29366,7 +29736,7 @@ GameObject:
   - component: {fileID: 852880545}
   - component: {fileID: 852880549}
   - component: {fileID: 852880550}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (8)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -29528,6 +29898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &852991917
 GameObject:
   m_ObjectHideFlags: 0
@@ -29705,6 +30076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &864587932
 GameObject:
   m_ObjectHideFlags: 0
@@ -29754,6 +30126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &865681853
 GameObject:
   m_ObjectHideFlags: 0
@@ -29803,6 +30178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &869977638
 GameObject:
   m_ObjectHideFlags: 0
@@ -29851,6 +30229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &869977641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30157,6 +30536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &873270460
 GameObject:
   m_ObjectHideFlags: 0
@@ -30334,6 +30714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &875913771 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010810923626, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -30454,6 +30835,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &897932437
 GameObject:
   m_ObjectHideFlags: 0
@@ -30469,7 +30853,7 @@ GameObject:
   - component: {fileID: 897932439}
   - component: {fileID: 897932443}
   - component: {fileID: 897932444}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (17)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -30631,6 +31015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &898631380
 GameObject:
   m_ObjectHideFlags: 0
@@ -30679,6 +31064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &898631383
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30985,6 +31371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &901611544
 GameObject:
   m_ObjectHideFlags: 0
@@ -31162,6 +31549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &903938775
 GameObject:
   m_ObjectHideFlags: 0
@@ -31177,7 +31565,7 @@ GameObject:
   - component: {fileID: 903938777}
   - component: {fileID: 903938781}
   - component: {fileID: 903938782}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (12)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -31339,6 +31727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &908788710
 GameObject:
   m_ObjectHideFlags: 0
@@ -31354,7 +31743,7 @@ GameObject:
   - component: {fileID: 908788712}
   - component: {fileID: 908788716}
   - component: {fileID: 908788717}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (18)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -31516,6 +31905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &921969560
 GameObject:
   m_ObjectHideFlags: 0
@@ -31564,6 +31954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &921969563
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31870,6 +32261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &938845282
 GameObject:
   m_ObjectHideFlags: 0
@@ -32047,6 +32439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &939459906
 GameObject:
   m_ObjectHideFlags: 0
@@ -32090,7 +32483,7 @@ Transform:
   m_Children:
   - {fileID: 1807027107}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &942617683
 GameObject:
@@ -32107,7 +32500,7 @@ GameObject:
   - component: {fileID: 942617685}
   - component: {fileID: 942617689}
   - component: {fileID: 942617690}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (5)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -32269,6 +32662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &943764188
 GameObject:
   m_ObjectHideFlags: 0
@@ -32317,6 +32711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &943764191
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32623,6 +33018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &955333855
 GameObject:
   m_ObjectHideFlags: 0
@@ -32671,6 +33067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &955333858
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32849,6 +33246,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &959306267
 GameObject:
   m_ObjectHideFlags: 0
@@ -32864,7 +33264,7 @@ GameObject:
   - component: {fileID: 959306270}
   - component: {fileID: 959306273}
   - component: {fileID: 959306274}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -33026,6 +33426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &960519032
 GameObject:
   m_ObjectHideFlags: 0
@@ -33203,6 +33604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &963441991
 GameObject:
   m_ObjectHideFlags: 0
@@ -33218,7 +33620,7 @@ GameObject:
   - component: {fileID: 963441993}
   - component: {fileID: 963441997}
   - component: {fileID: 963441998}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (19)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -33380,6 +33782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &965068220
 GameObject:
   m_ObjectHideFlags: 0
@@ -33395,7 +33798,7 @@ GameObject:
   - component: {fileID: 965068223}
   - component: {fileID: 965068226}
   - component: {fileID: 965068227}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (13)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -33557,6 +33960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &975094225
 GameObject:
   m_ObjectHideFlags: 0
@@ -33572,7 +33976,7 @@ GameObject:
   - component: {fileID: 975094227}
   - component: {fileID: 975094231}
   - component: {fileID: 975094232}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (4)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -33734,6 +34138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &975455899
 GameObject:
   m_ObjectHideFlags: 0
@@ -33911,6 +34316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &980595273
 GameObject:
   m_ObjectHideFlags: 0
@@ -33959,6 +34365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &980595276
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34265,6 +34672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &989688337
 GameObject:
   m_ObjectHideFlags: 0
@@ -34280,7 +34688,7 @@ GameObject:
   - component: {fileID: 989688339}
   - component: {fileID: 989688343}
   - component: {fileID: 989688344}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (12)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -34442,6 +34850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &990936844
 GameObject:
   m_ObjectHideFlags: 0
@@ -34490,6 +34899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &990936847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34667,6 +35077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &994100115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34844,6 +35255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &995687843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34973,6 +35385,25 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!1 &1000239246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1093805190240593559, guid: 795cdb6eae420dc49b1d7790e039b95d,
+    type: 3}
+  m_PrefabInstance: {fileID: 661394779388229429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1000239255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000239246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559b9ded41eb0cb45822f520d3127090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resistor: {fileID: 0}
 --- !u!1 &1002551590
 GameObject:
   m_ObjectHideFlags: 0
@@ -35022,6 +35453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1015402923
 GameObject:
   m_ObjectHideFlags: 0
@@ -35199,6 +35633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1026953439
 GameObject:
   m_ObjectHideFlags: 0
@@ -35248,6 +35683,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1028345283
 GameObject:
   m_ObjectHideFlags: 0
@@ -35425,6 +35863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1029669210
 GameObject:
   m_ObjectHideFlags: 0
@@ -35440,7 +35879,7 @@ GameObject:
   - component: {fileID: 1029669212}
   - component: {fileID: 1029669216}
   - component: {fileID: 1029669217}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (17)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -35602,6 +36041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1037593107
 GameObject:
   m_ObjectHideFlags: 0
@@ -35779,6 +36219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1044103559
 GameObject:
   m_ObjectHideFlags: 0
@@ -35956,6 +36397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1044338141
 GameObject:
   m_ObjectHideFlags: 0
@@ -36004,6 +36446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1044338144
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36182,6 +36625,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1050566363
 GameObject:
   m_ObjectHideFlags: 0
@@ -36230,6 +36676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1050566366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36536,6 +36983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1057539905
 GameObject:
   m_ObjectHideFlags: 0
@@ -36584,6 +37032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1057539908
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36791,6 +37240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1057771961
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36968,6 +37418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1058021986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37145,6 +37596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1058148605
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37323,6 +37775,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1060325593
 GameObject:
   m_ObjectHideFlags: 0
@@ -37338,7 +37793,7 @@ GameObject:
   - component: {fileID: 1060325595}
   - component: {fileID: 1060325599}
   - component: {fileID: 1060325600}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (1)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -37500,6 +37955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1060819437
 GameObject:
   m_ObjectHideFlags: 0
@@ -37515,7 +37971,7 @@ GameObject:
   - component: {fileID: 1060819439}
   - component: {fileID: 1060819443}
   - component: {fileID: 1060819444}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (9)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -37677,6 +38133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1076514692
 GameObject:
   m_ObjectHideFlags: 0
@@ -37725,6 +38182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1076514695
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37902,6 +38360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1078432220
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38182,6 +38641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1098002827
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38359,6 +38819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1099768795
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38537,6 +38998,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1118859097
 GameObject:
   m_ObjectHideFlags: 0
@@ -38552,7 +39016,7 @@ GameObject:
   - component: {fileID: 1118859099}
   - component: {fileID: 1118859103}
   - component: {fileID: 1118859104}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (5)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -38714,6 +39178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1119188530
 GameObject:
   m_ObjectHideFlags: 0
@@ -38762,6 +39227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1119188533
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -38997,6 +39463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1122680091
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39141,7 +39608,7 @@ GameObject:
   - component: {fileID: 1123119884}
   - component: {fileID: 1123119888}
   - component: {fileID: 1123119889}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (9)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -39303,6 +39770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1134443236
 GameObject:
   m_ObjectHideFlags: 0
@@ -39318,7 +39786,7 @@ GameObject:
   - component: {fileID: 1134443238}
   - component: {fileID: 1134443242}
   - component: {fileID: 1134443243}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (1)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -39480,6 +39948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1143491130
 GameObject:
   m_ObjectHideFlags: 0
@@ -39657,6 +40126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1145646328
 GameObject:
   m_ObjectHideFlags: 0
@@ -39672,7 +40142,7 @@ GameObject:
   - component: {fileID: 1145646330}
   - component: {fileID: 1145646334}
   - component: {fileID: 1145646335}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -39834,6 +40304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1146129311
 GameObject:
   m_ObjectHideFlags: 0
@@ -39849,7 +40320,7 @@ GameObject:
   - component: {fileID: 1146129313}
   - component: {fileID: 1146129317}
   - component: {fileID: 1146129318}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (14)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -40011,6 +40482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1146693491
 GameObject:
   m_ObjectHideFlags: 0
@@ -40059,6 +40531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1146693494
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40203,7 +40676,7 @@ GameObject:
   - component: {fileID: 1158885263}
   - component: {fileID: 1158885267}
   - component: {fileID: 1158885268}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (11)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -40365,6 +40838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1160023466
 GameObject:
   m_ObjectHideFlags: 0
@@ -40413,6 +40887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1160023469
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40590,6 +41065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1162173759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40734,7 +41210,7 @@ GameObject:
   - component: {fileID: 1163359435}
   - component: {fileID: 1163359439}
   - component: {fileID: 1163359440}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (3)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -40896,6 +41372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1164049632
 GameObject:
   m_ObjectHideFlags: 0
@@ -41073,6 +41550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1164925178
 GameObject:
   m_ObjectHideFlags: 0
@@ -41121,6 +41599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1164925181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41298,6 +41777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1185701221
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -41604,6 +42084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1195614633
 GameObject:
   m_ObjectHideFlags: 0
@@ -41619,7 +42100,7 @@ GameObject:
   - component: {fileID: 1195614635}
   - component: {fileID: 1195614639}
   - component: {fileID: 1195614640}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (7)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -41781,6 +42262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1198595110
 GameObject:
   m_ObjectHideFlags: 0
@@ -41796,7 +42278,7 @@ GameObject:
   - component: {fileID: 1198595112}
   - component: {fileID: 1198595116}
   - component: {fileID: 1198595117}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (13)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -41958,6 +42440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1202159675
 GameObject:
   m_ObjectHideFlags: 0
@@ -42135,6 +42618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1202745106
 GameObject:
   m_ObjectHideFlags: 0
@@ -42312,6 +42796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1205206189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011227951356, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -42586,6 +43071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1206394296
 GameObject:
   m_ObjectHideFlags: 0
@@ -42635,6 +43121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1206650087
 GameObject:
   m_ObjectHideFlags: 0
@@ -42650,7 +43139,7 @@ GameObject:
   - component: {fileID: 1206650089}
   - component: {fileID: 1206650093}
   - component: {fileID: 1206650094}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (13)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -42812,6 +43301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1207303630
 GameObject:
   m_ObjectHideFlags: 0
@@ -42860,6 +43350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1207303633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43237,6 +43728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1213663876
 GameObject:
   m_ObjectHideFlags: 0
@@ -43285,6 +43777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1213663879
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43591,6 +44084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1218926736
 GameObject:
   m_ObjectHideFlags: 0
@@ -43639,6 +44133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1218926739
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -43816,6 +44311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1228160813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44122,6 +44618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1232341756
 GameObject:
   m_ObjectHideFlags: 0
@@ -44299,6 +44796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1239406341
 GameObject:
   m_ObjectHideFlags: 0
@@ -44347,6 +44845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1239406344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44476,6 +44975,183 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!1 &1241776488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241776489}
+  - component: {fileID: 1241776495}
+  - component: {fileID: 1241776494}
+  - component: {fileID: 1241776493}
+  - component: {fileID: 1241776492}
+  - component: {fileID: 1241776491}
+  - component: {fileID: 1241776490}
+  m_Layer: 12
+  m_Name: Negative
+  m_TagString: BreadboardHoles
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241776489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241776488}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000014, y: 0.000018, z: 0.000045}
+  m_LocalScale: {x: 0.000039249997, y: 0.000024749994, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1887552809}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1241776490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241776488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493b0497771071d4b87aa789234ee209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1241776491
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241776488}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
+--- !u!136 &1241776492
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241776488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1241776493
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241776488}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9b01d7c0e4dfa854eb5dfe2624e27c0f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1241776494
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241776488}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1241776495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241776488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateActionSetOnAttach:
+    actionSetPath: 
+  hideHandOnAttach: 1
+  hideSkeletonOnAttach: 0
+  hideControllerOnAttach: 0
+  handAnimationOnPickup: 0
+  setRangeOfMotionOnPickup: -1
+  useHandObjectAttachmentPoint: 1
+  attachEaseIn: 0
+  snapAttachEaseInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  snapAttachEaseInTime: 0.15
+  snapAttachEaseInCompleted: 0
+  skeletonPoser: {fileID: 0}
+  handFollowTransform: 1
+  highlightOnHover: 1
+  hideHighlight: []
+  hoverPriority: 0
 --- !u!1 &1242768237
 GameObject:
   m_ObjectHideFlags: 0
@@ -44491,7 +45167,7 @@ GameObject:
   - component: {fileID: 1242768240}
   - component: {fileID: 1242768243}
   - component: {fileID: 1242768244}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (20)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -44653,6 +45329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1255827425
 GameObject:
   m_ObjectHideFlags: 0
@@ -44701,6 +45378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1255827428
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44879,6 +45557,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1260999838
 GameObject:
   m_ObjectHideFlags: 0
@@ -44894,7 +45575,7 @@ GameObject:
   - component: {fileID: 1260999840}
   - component: {fileID: 1260999844}
   - component: {fileID: 1260999845}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (6)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -45056,6 +45737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1263924795
 GameObject:
   m_ObjectHideFlags: 0
@@ -45233,6 +45915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1268506409
 GameObject:
   m_ObjectHideFlags: 0
@@ -45248,7 +45931,7 @@ GameObject:
   - component: {fileID: 1268506412}
   - component: {fileID: 1268506415}
   - component: {fileID: 1268506416}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (19)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -45410,6 +46093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1277630429
 GameObject:
   m_ObjectHideFlags: 0
@@ -45587,6 +46271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1285754932
 GameObject:
   m_ObjectHideFlags: 0
@@ -45602,7 +46287,7 @@ GameObject:
   - component: {fileID: 1285754934}
   - component: {fileID: 1285754938}
   - component: {fileID: 1285754939}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (17)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -45764,6 +46449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1286217244
 GameObject:
   m_ObjectHideFlags: 0
@@ -45813,6 +46499,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1287937133
 GameObject:
   m_ObjectHideFlags: 0
@@ -45828,7 +46517,7 @@ GameObject:
   - component: {fileID: 1287937135}
   - component: {fileID: 1287937139}
   - component: {fileID: 1287937140}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (24)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -45990,6 +46679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1291812682
 GameObject:
   m_ObjectHideFlags: 0
@@ -46039,6 +46729,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1295286662
 GameObject:
   m_ObjectHideFlags: 0
@@ -46216,6 +46909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1297645756
 GameObject:
   m_ObjectHideFlags: 0
@@ -46264,6 +46958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1297645759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46441,6 +47136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1309706219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46747,6 +47443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1311978875
 GameObject:
   m_ObjectHideFlags: 0
@@ -46795,6 +47492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1311978878
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46972,6 +47670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1312976970
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47142,7 +47841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4037808199842474, guid: 1311ead9e03725440bcd145a4ddd5518, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4037808199842474, guid: 1311ead9e03725440bcd145a4ddd5518, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -47206,6 +47905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1314265805
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47383,6 +48083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1316389346
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47560,6 +48261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1316550269
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47704,7 +48406,7 @@ GameObject:
   - component: {fileID: 1317107994}
   - component: {fileID: 1317107998}
   - component: {fileID: 1317107999}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (19)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -47866,6 +48568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1319780900
 GameObject:
   m_ObjectHideFlags: 0
@@ -47876,10 +48579,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1319780901}
   - component: {fileID: 1319780902}
-  - component: {fileID: 1319780903}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Negative Row (Bottom)
-  m_TagString: Untagged
+  m_TagString: Power
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47932,22 +48634,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1319780900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dc3ec81af772c44f943392854f960f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1319780903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319780900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbc7a3627e02ebd4ca0dce2c1738c8d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1327232927
 GameObject:
   m_ObjectHideFlags: 0
@@ -48125,6 +48818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1329953343
 GameObject:
   m_ObjectHideFlags: 0
@@ -48173,6 +48867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1329953346
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48479,6 +49174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1001 &1341099235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48524,7 +49220,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c3dc70573e667b64a87ede17b9ab8ac9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c3dc70573e667b64a87ede17b9ab8ac9,
         type: 3}
@@ -48740,6 +49436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1352360463
 GameObject:
   m_ObjectHideFlags: 0
@@ -48788,6 +49485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1352360466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49036,6 +49734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1370168682
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49342,6 +50041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1375985998
 GameObject:
   m_ObjectHideFlags: 0
@@ -49390,6 +50090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1375986001
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49534,7 +50235,7 @@ GameObject:
   - component: {fileID: 1384315098}
   - component: {fileID: 1384315102}
   - component: {fileID: 1384315103}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (9)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -49696,6 +50397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1387464356
 GameObject:
   m_ObjectHideFlags: 0
@@ -49745,6 +50447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1393583989
 GameObject:
   m_ObjectHideFlags: 0
@@ -49760,7 +50465,7 @@ GameObject:
   - component: {fileID: 1393583991}
   - component: {fileID: 1393583995}
   - component: {fileID: 1393583996}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (21)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -49922,6 +50627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1398431000
 GameObject:
   m_ObjectHideFlags: 0
@@ -50099,6 +50805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1412094217
 GameObject:
   m_ObjectHideFlags: 0
@@ -50114,7 +50821,7 @@ GameObject:
   - component: {fileID: 1412094220}
   - component: {fileID: 1412094223}
   - component: {fileID: 1412094224}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (23)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -50276,6 +50983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1414299913
 GameObject:
   m_ObjectHideFlags: 0
@@ -50324,6 +51032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1414299916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50502,6 +51211,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1417301848
 GameObject:
   m_ObjectHideFlags: 0
@@ -50550,6 +51262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1417301851
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50728,6 +51441,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1427598571
 GameObject:
   m_ObjectHideFlags: 0
@@ -50776,6 +51492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1427598574
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50953,6 +51670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1429845512
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51131,6 +51849,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1436465688
 GameObject:
   m_ObjectHideFlags: 0
@@ -51179,6 +51900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1436465691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51323,7 +52045,7 @@ GameObject:
   - component: {fileID: 1446154024}
   - component: {fileID: 1446154028}
   - component: {fileID: 1446154029}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (12)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -51485,6 +52207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1452908576
 GameObject:
   m_ObjectHideFlags: 0
@@ -51662,6 +52385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1454774197
 GameObject:
   m_ObjectHideFlags: 0
@@ -51710,6 +52434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1454774200
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52016,6 +52741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1457460335
 GameObject:
   m_ObjectHideFlags: 0
@@ -52064,6 +52790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1457460338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52370,6 +53097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1001 &1464600470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52411,7 +53139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428928, guid: 73ac470d3d909d645a6c89a4664b6849, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 428928, guid: 73ac470d3d909d645a6c89a4664b6849, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -52442,7 +53170,7 @@ GameObject:
   - component: {fileID: 1468831692}
   - component: {fileID: 1468831695}
   - component: {fileID: 1468831696}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (17)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -52604,6 +53332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1468953510
 GameObject:
   m_ObjectHideFlags: 0
@@ -52781,6 +53510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1474004986
 GameObject:
   m_ObjectHideFlags: 0
@@ -52958,6 +53688,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
+--- !u!1 &1475722633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1093805188682522841, guid: 795cdb6eae420dc49b1d7790e039b95d,
+    type: 3}
+  m_PrefabInstance: {fileID: 661394779388229429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1475722642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475722633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a8cb88223b51d4e87f6916b8bcb5f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resistor: {fileID: 0}
 --- !u!1 &1479580971
 GameObject:
   m_ObjectHideFlags: 0
@@ -53007,6 +53757,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1485557430
 GameObject:
   m_ObjectHideFlags: 0
@@ -53184,6 +53937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1488794997
 GameObject:
   m_ObjectHideFlags: 0
@@ -53361,6 +54115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1491588088
 GameObject:
   m_ObjectHideFlags: 0
@@ -53376,7 +54131,7 @@ GameObject:
   - component: {fileID: 1491588090}
   - component: {fileID: 1491588094}
   - component: {fileID: 1491588095}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (16)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -53538,6 +54293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1495137140
 GameObject:
   m_ObjectHideFlags: 0
@@ -53553,7 +54309,7 @@ GameObject:
   - component: {fileID: 1495137142}
   - component: {fileID: 1495137146}
   - component: {fileID: 1495137147}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (24)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -53715,6 +54471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1497404323
 GameObject:
   m_ObjectHideFlags: 0
@@ -53892,6 +54649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1510324227
 GameObject:
   m_ObjectHideFlags: 0
@@ -53907,7 +54665,7 @@ GameObject:
   - component: {fileID: 1510324230}
   - component: {fileID: 1510324233}
   - component: {fileID: 1510324234}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (8)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -54069,6 +54827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1520838763
 GameObject:
   m_ObjectHideFlags: 0
@@ -54117,6 +54876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1520838766
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -54423,6 +55183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1523229159
 GameObject:
   m_ObjectHideFlags: 0
@@ -54600,6 +55361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1531457943
 GameObject:
   m_ObjectHideFlags: 0
@@ -54615,7 +55377,7 @@ GameObject:
   - component: {fileID: 1531457946}
   - component: {fileID: 1531457949}
   - component: {fileID: 1531457950}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (1)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -54777,6 +55539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1533189644
 GameObject:
   m_ObjectHideFlags: 0
@@ -54825,6 +55588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1533189647
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55131,6 +55895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1550352441
 GameObject:
   m_ObjectHideFlags: 0
@@ -55179,6 +55944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1550352444
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55356,6 +56122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1555130173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -55662,6 +56429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1557163461
 GameObject:
   m_ObjectHideFlags: 0
@@ -55677,7 +56445,7 @@ GameObject:
   - component: {fileID: 1557163463}
   - component: {fileID: 1557163467}
   - component: {fileID: 1557163468}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (20)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -55839,6 +56607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1558280516
 GameObject:
   m_ObjectHideFlags: 0
@@ -55854,7 +56623,7 @@ GameObject:
   - component: {fileID: 1558280518}
   - component: {fileID: 1558280522}
   - component: {fileID: 1558280523}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (5)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -56016,6 +56785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1559335973
 GameObject:
   m_ObjectHideFlags: 0
@@ -56064,6 +56834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1559335976
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56241,6 +57012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1559443741
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56547,6 +57319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1574829942
 GameObject:
   m_ObjectHideFlags: 0
@@ -56724,6 +57497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1577963008
 GameObject:
   m_ObjectHideFlags: 0
@@ -56772,6 +57546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1577963011
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -56916,7 +57691,7 @@ GameObject:
   - component: {fileID: 1580315480}
   - component: {fileID: 1580315483}
   - component: {fileID: 1580315484}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (16)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -57078,6 +57853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1585663887
 GameObject:
   m_ObjectHideFlags: 0
@@ -57126,6 +57902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1585663890
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57270,7 +58047,7 @@ GameObject:
   - component: {fileID: 1591783452}
   - component: {fileID: 1591783456}
   - component: {fileID: 1591783457}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (21)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -57432,6 +58209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1592128061
 GameObject:
   m_ObjectHideFlags: 0
@@ -57609,6 +58387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1593708548
 GameObject:
   m_ObjectHideFlags: 0
@@ -57658,6 +58437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1596166197
 GameObject:
   m_ObjectHideFlags: 0
@@ -57706,6 +58488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1596166200
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58012,6 +58795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1602789493
 GameObject:
   m_ObjectHideFlags: 0
@@ -58061,6 +58845,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1604173243 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000012994600004, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -58128,6 +58915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1614219696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58369,7 +59157,7 @@ GameObject:
   - component: {fileID: 1623226307}
   - component: {fileID: 1623226311}
   - component: {fileID: 1623226312}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (22)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -58531,6 +59319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1640241320
 GameObject:
   m_ObjectHideFlags: 0
@@ -58579,6 +59368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1640241323
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58723,7 +59513,7 @@ GameObject:
   - component: {fileID: 1648490675}
   - component: {fileID: 1648490679}
   - component: {fileID: 1648490680}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (23)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -58885,6 +59675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1657956767
 GameObject:
   m_ObjectHideFlags: 0
@@ -58933,6 +59724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1657956770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -59111,6 +59903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1662355856
 GameObject:
   m_ObjectHideFlags: 0
@@ -59126,7 +59921,7 @@ GameObject:
   - component: {fileID: 1662355858}
   - component: {fileID: 1662355862}
   - component: {fileID: 1662355863}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (2)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -59288,6 +60083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1664178788
 GameObject:
   m_ObjectHideFlags: 0
@@ -59336,6 +60132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1664178791
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -59642,6 +60439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1667785329
 GameObject:
   m_ObjectHideFlags: 0
@@ -59690,6 +60488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1667785332
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -59996,6 +60795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1682198036
 GameObject:
   m_ObjectHideFlags: 0
@@ -60044,6 +60844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1682198039
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -60350,6 +61151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1706972691
 GameObject:
   m_ObjectHideFlags: 0
@@ -60398,6 +61200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1706972694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -60576,6 +61379,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1717954536
 GameObject:
   m_ObjectHideFlags: 0
@@ -60625,6 +61431,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1719711720
 GameObject:
   m_ObjectHideFlags: 0
@@ -60802,6 +61611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1722705081
 GameObject:
   m_ObjectHideFlags: 0
@@ -60979,6 +61789,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
+--- !u!1001 &1725513094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.433
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.909
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.812
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5550f35364bdeb2478f345377d4e0258,
+        type: 3}
+      propertyPath: m_Name
+      value: battery
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5550f35364bdeb2478f345377d4e0258, type: 3}
 --- !u!1 &1727617245
 GameObject:
   m_ObjectHideFlags: 0
@@ -60994,7 +61874,7 @@ GameObject:
   - component: {fileID: 1727617247}
   - component: {fileID: 1727617251}
   - component: {fileID: 1727617252}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (10)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -61156,6 +62036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1728300640
 GameObject:
   m_ObjectHideFlags: 0
@@ -61171,7 +62052,7 @@ GameObject:
   - component: {fileID: 1728300642}
   - component: {fileID: 1728300646}
   - component: {fileID: 1728300647}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (8)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -61333,6 +62214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1728447146
 GameObject:
   m_ObjectHideFlags: 0
@@ -61510,6 +62392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1734605974
 GameObject:
   m_ObjectHideFlags: 0
@@ -61558,6 +62441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1734605977
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -61864,6 +62748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1759971799
 GameObject:
   m_ObjectHideFlags: 0
@@ -62041,6 +62926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1761207837
 GameObject:
   m_ObjectHideFlags: 0
@@ -62089,6 +62975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1761207840
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62395,6 +63282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1764229029
 GameObject:
   m_ObjectHideFlags: 0
@@ -62410,7 +63298,7 @@ GameObject:
   - component: {fileID: 1764229032}
   - component: {fileID: 1764229035}
   - component: {fileID: 1764229036}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (9)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -62572,6 +63460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1767658816
 GameObject:
   m_ObjectHideFlags: 0
@@ -62749,6 +63638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1773376539
 GameObject:
   m_ObjectHideFlags: 0
@@ -62797,6 +63687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1773376542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63103,6 +63994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1778001927
 GameObject:
   m_ObjectHideFlags: 0
@@ -63118,7 +64010,7 @@ GameObject:
   - component: {fileID: 1778001929}
   - component: {fileID: 1778001933}
   - component: {fileID: 1778001934}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (22)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -63280,6 +64172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1778448982
 GameObject:
   m_ObjectHideFlags: 0
@@ -63328,6 +64221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1778448985
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63472,7 +64366,7 @@ GameObject:
   - component: {fileID: 1782599450}
   - component: {fileID: 1782599454}
   - component: {fileID: 1782599455}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (4)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -63634,6 +64528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1788524840
 GameObject:
   m_ObjectHideFlags: 0
@@ -63682,6 +64577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1788524843
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63988,6 +64884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1793651888
 GameObject:
   m_ObjectHideFlags: 0
@@ -64036,6 +64933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1793651891
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64342,6 +65240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1803477892
 GameObject:
   m_ObjectHideFlags: 0
@@ -64391,6 +65290,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1804453719
 GameObject:
   m_ObjectHideFlags: 0
@@ -64439,6 +65341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1804453722
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64589,7 +65492,7 @@ GameObject:
   - component: {fileID: 1811173929}
   - component: {fileID: 1811173933}
   - component: {fileID: 1811173934}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (7)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -64751,6 +65654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1814417392 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
@@ -64970,6 +65874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1820490445
 GameObject:
   m_ObjectHideFlags: 0
@@ -65147,6 +66052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1823648631
 GameObject:
   m_ObjectHideFlags: 0
@@ -65324,6 +66230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1826617446
 GameObject:
   m_ObjectHideFlags: 0
@@ -65339,7 +66246,7 @@ GameObject:
   - component: {fileID: 1826617448}
   - component: {fileID: 1826617452}
   - component: {fileID: 1826617453}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (20)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -65501,6 +66408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1833329807
 GameObject:
   m_ObjectHideFlags: 0
@@ -65678,6 +66586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1852887506
 GameObject:
   m_ObjectHideFlags: 0
@@ -65726,6 +66635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1852887509
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65896,7 +66806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 428928, guid: 73ac470d3d909d645a6c89a4664b6849, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 428928, guid: 73ac470d3d909d645a6c89a4664b6849, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -66089,6 +66999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1876603920
 GameObject:
   m_ObjectHideFlags: 0
@@ -66137,6 +67048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1876603923
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -66358,7 +67270,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882276144
 GameObject:
@@ -66408,6 +67320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1882276147
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -66586,6 +67499,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
+--- !u!1 &1887552806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5550f35364bdeb2478f345377d4e0258,
+    type: 3}
+  m_PrefabInstance: {fileID: 1725513094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1887552807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887552806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48ade5b6455783a40862b9902985718d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voltage: 5
+  positiveCollisionDetected: 0
+  negativeCollisionDetected: 0
+--- !u!114 &1887552808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887552806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc7a3627e02ebd4ca0dce2c1738c8d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voltage: 5
+  current: 0.05
+  collisionInColumn: {fileID: 0}
+  children: []
+--- !u!4 &1887552809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5550f35364bdeb2478f345377d4e0258,
+    type: 3}
+  m_PrefabInstance: {fileID: 1725513094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1893999274
 GameObject:
   m_ObjectHideFlags: 0
@@ -66635,6 +67594,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1895418195
 GameObject:
   m_ObjectHideFlags: 0
@@ -66683,6 +67645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1895418198
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -66860,6 +67823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1898556572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -67166,6 +68130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1910308245
 GameObject:
   m_ObjectHideFlags: 0
@@ -67181,7 +68146,7 @@ GameObject:
   - component: {fileID: 1910308248}
   - component: {fileID: 1910308251}
   - component: {fileID: 1910308252}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (11)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -67343,6 +68308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1911625752
 GameObject:
   m_ObjectHideFlags: 0
@@ -67392,6 +68358,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1924421361
 GameObject:
   m_ObjectHideFlags: 0
@@ -67569,6 +68538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1927224901
 GameObject:
   m_ObjectHideFlags: 0
@@ -67617,6 +68587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1927224904
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -67787,7 +68758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -67830,7 +68801,7 @@ GameObject:
   - component: {fileID: 1933025570}
   - component: {fileID: 1933025574}
   - component: {fileID: 1933025575}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (6)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -67992,6 +68963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1933294875
 GameObject:
   m_ObjectHideFlags: 0
@@ -68169,6 +69141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1936026860
 GameObject:
   m_ObjectHideFlags: 0
@@ -68346,6 +69319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1938572593
 GameObject:
   m_ObjectHideFlags: 0
@@ -68361,7 +69335,7 @@ GameObject:
   - component: {fileID: 1938572595}
   - component: {fileID: 1938572599}
   - component: {fileID: 1938572600}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (20)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -68523,6 +69497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1940263683
 GameObject:
   m_ObjectHideFlags: 0
@@ -68700,6 +69675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1941326427
 GameObject:
   m_ObjectHideFlags: 0
@@ -68877,6 +69853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1944467360
 GameObject:
   m_ObjectHideFlags: 0
@@ -68925,6 +69902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1944467363
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -69231,6 +70209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1954762103
 GameObject:
   m_ObjectHideFlags: 0
@@ -69246,7 +70225,7 @@ GameObject:
   - component: {fileID: 1954762106}
   - component: {fileID: 1954762109}
   - component: {fileID: 1954762110}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (15)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -69408,6 +70387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1961847786
 GameObject:
   m_ObjectHideFlags: 0
@@ -69457,6 +70437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1962218254
 GameObject:
   m_ObjectHideFlags: 0
@@ -69505,6 +70488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1962218257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -69649,7 +70633,7 @@ GameObject:
   - component: {fileID: 1964323189}
   - component: {fileID: 1964323192}
   - component: {fileID: 1964323193}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (2)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -69811,6 +70795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1966287577
 GameObject:
   m_ObjectHideFlags: 0
@@ -69826,7 +70811,7 @@ GameObject:
   - component: {fileID: 1966287579}
   - component: {fileID: 1966287583}
   - component: {fileID: 1966287584}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (24)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -69988,6 +70973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1968259649
 GameObject:
   m_ObjectHideFlags: 0
@@ -70165,6 +71151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1970052315
 GameObject:
   m_ObjectHideFlags: 0
@@ -70214,6 +71201,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &1971008399
 GameObject:
   m_ObjectHideFlags: 0
@@ -70229,7 +71219,7 @@ GameObject:
   - component: {fileID: 1971008401}
   - component: {fileID: 1971008405}
   - component: {fileID: 1971008406}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (23)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -70391,6 +71381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &1985155859
 GameObject:
   m_ObjectHideFlags: 0
@@ -70439,6 +71430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1985155862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -70616,6 +71608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &1989452136
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -70760,7 +71753,7 @@ GameObject:
   - component: {fileID: 2000077879}
   - component: {fileID: 2000077882}
   - component: {fileID: 2000077883}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (21)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -70922,6 +71915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2001021918
 GameObject:
   m_ObjectHideFlags: 0
@@ -70970,6 +71964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2001021921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -71148,6 +72143,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &2012089302
 GameObject:
   m_ObjectHideFlags: 0
@@ -71325,6 +72323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2021060675
 GameObject:
   m_ObjectHideFlags: 0
@@ -71373,6 +72372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2021060678
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -71679,6 +72679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2023679312
 GameObject:
   m_ObjectHideFlags: 0
@@ -71727,6 +72728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2023679315
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -71904,6 +72906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2026522755
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -72081,6 +73084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2035083544
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -72387,6 +73391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2038656161
 GameObject:
   m_ObjectHideFlags: 0
@@ -72402,7 +73407,7 @@ GameObject:
   - component: {fileID: 2038656163}
   - component: {fileID: 2038656167}
   - component: {fileID: 2038656168}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (11)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -72564,6 +73569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2039087146
 GameObject:
   m_ObjectHideFlags: 0
@@ -72612,6 +73618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2039087149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -72918,6 +73925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2057454031
 GameObject:
   m_ObjectHideFlags: 0
@@ -72933,7 +73941,7 @@ GameObject:
   - component: {fileID: 2057454033}
   - component: {fileID: 2057454037}
   - component: {fileID: 2057454038}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (21)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -73095,6 +74103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2059195282
 GameObject:
   m_ObjectHideFlags: 0
@@ -73110,7 +74119,7 @@ GameObject:
   - component: {fileID: 2059195284}
   - component: {fileID: 2059195288}
   - component: {fileID: 2059195289}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (15)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -73272,6 +74281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2063195716
 GameObject:
   m_ObjectHideFlags: 0
@@ -73320,6 +74330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2063195719
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -73498,6 +74509,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &2078564420
 GameObject:
   m_ObjectHideFlags: 0
@@ -73546,6 +74560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2078564423
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -73852,6 +74867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2097358211
 GameObject:
   m_ObjectHideFlags: 0
@@ -74029,6 +75045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2099302794
 GameObject:
   m_ObjectHideFlags: 0
@@ -74077,6 +75094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2099302797
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -74383,6 +75401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2106745027
 GameObject:
   m_ObjectHideFlags: 0
@@ -74398,7 +75417,7 @@ GameObject:
   - component: {fileID: 2106745030}
   - component: {fileID: 2106745033}
   - component: {fileID: 2106745034}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (3)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -74560,6 +75579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2110935945
 GameObject:
   m_ObjectHideFlags: 0
@@ -74737,6 +75757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2115651386
 GameObject:
   m_ObjectHideFlags: 0
@@ -74785,6 +75806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2115651389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -74962,6 +75984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2120389636
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75106,7 +76129,7 @@ GameObject:
   - component: {fileID: 2123227205}
   - component: {fileID: 2123227208}
   - component: {fileID: 2123227209}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (4)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -75268,6 +76291,184 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
+--- !u!1 &2123737489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2123737490}
+  - component: {fileID: 2123737496}
+  - component: {fileID: 2123737495}
+  - component: {fileID: 2123737494}
+  - component: {fileID: 2123737493}
+  - component: {fileID: 2123737492}
+  - component: {fileID: 2123737491}
+  m_Layer: 12
+  m_Name: Positive
+  m_TagString: BreadboardHoles
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2123737490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123737489}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000014, y: 0.000215, z: 0.000035}
+  m_LocalScale: {x: 0.000039249997, y: 0.000024749994, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1887552809}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2123737491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123737489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 493b0497771071d4b87aa789234ee209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &2123737492
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123737489}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
+--- !u!136 &2123737493
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123737489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &2123737494
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123737489}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9b01d7c0e4dfa854eb5dfe2624e27c0f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2123737495
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123737489}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2123737496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123737489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93b6a877adcbf94c89a9d6e0c0e844d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateActionSetOnAttach:
+    actionSetPath: 
+  hideHandOnAttach: 1
+  hideSkeletonOnAttach: 0
+  hideControllerOnAttach: 0
+  handAnimationOnPickup: 0
+  setRangeOfMotionOnPickup: -1
+  useHandObjectAttachmentPoint: 1
+  attachEaseIn: 0
+  snapAttachEaseInCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  snapAttachEaseInTime: 0.15
+  snapAttachEaseInCompleted: 0
+  skeletonPoser: {fileID: 0}
+  handFollowTransform: 1
+  highlightOnHover: 1
+  hideHighlight: []
+  hoverPriority: 0
 --- !u!1 &2124406485
 GameObject:
   m_ObjectHideFlags: 0
@@ -75445,6 +76646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2124550739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011939367974, guid: 9ea2606f8fddead46aabb7adb3d8d434,
@@ -75705,6 +76907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2134604821
 GameObject:
   m_ObjectHideFlags: 0
@@ -75754,6 +76957,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &2136021191
 GameObject:
   m_ObjectHideFlags: 0
@@ -75803,6 +77009,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 0
+  current: 0
+  collisionInColumn: {fileID: 0}
+  children: []
 --- !u!1 &2136452018
 GameObject:
   m_ObjectHideFlags: 0
@@ -75818,7 +77027,7 @@ GameObject:
   - component: {fileID: 2136452021}
   - component: {fileID: 2136452024}
   - component: {fileID: 2136452025}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: GameObject (7)
   m_TagString: BreadboardHoles
   m_Icon: {fileID: 0}
@@ -75980,6 +77189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1001 &2137603615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76021,7 +77231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -76085,6 +77295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!54 &2138388489
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -76391,6 +77602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1 &2143784269
 GameObject:
   m_ObjectHideFlags: 0
@@ -76568,6 +77780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76210b329c997b34e8bc52a0772230f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: {fileID: 0}
 --- !u!1001 &661394779388229429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76618,7 +77831,7 @@ PrefabInstance:
     - target: {fileID: 1055819720788485285, guid: 795cdb6eae420dc49b1d7790e039b95d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1055819720788485285, guid: 795cdb6eae420dc49b1d7790e039b95d,
         type: 3}
@@ -76682,7 +77895,7 @@ PrefabInstance:
     - target: {fileID: 6041392740820852894, guid: c37cf9e1f3f90e142ae1f9bd3f246928,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6041392740820852894, guid: c37cf9e1f3f90e142ae1f9bd3f246928,
         type: 3}
@@ -76751,7 +77964,7 @@ PrefabInstance:
     - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9210553649415711552, guid: e86ee65d84d24204e994bac54b8bf9e9,
         type: 3}
