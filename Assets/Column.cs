@@ -7,7 +7,7 @@ public class Column : MonoBehaviour
     public float voltage;
     public float current;
     private Collider collider;
-    public GameObject collisionInColumn = null;
+    public List<GameObject> collisionsInColumn = null;
     public Transform[] children;
     private void Start() {
 
@@ -17,12 +17,16 @@ public class Column : MonoBehaviour
 
     }
 
-    public void CollisionDetected(GameObject childScript) {
-        collisionInColumn = childScript;
+    public void CollisionDetected(GameObject child) {
+        if (!collisionsInColumn.Contains(child)) {
+            collisionsInColumn.Add(child);
+        }
+        
     }
 
-    public void CollisionUnDetected(GameObject childScript) {
-        collisionInColumn = null;
+    public void CollisionUnDetected(GameObject child) {
+        collisionsInColumn.Remove(child);
+        
     }
 
     public void PowerColumn(BreadboardHole childScript) {

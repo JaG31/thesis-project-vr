@@ -6,24 +6,24 @@ public class Battery : MonoBehaviour
 {
     // Start is called before the first frame update
     public float voltage = 5f;
-    public bool positiveCollisionDetected;
-    public bool negativeCollisionDetected;
-    public void CollisionDetected(BatteryHole childScript, string terminal) {
+    public GameObject positiveCollision = null;
+    public GameObject negativeCollision = null;
+    public void CollisionDetected(BatteryHole childScript, string terminal, GameObject obj) {
         if (terminal == "Positive") {
-            positiveCollisionDetected = true;
+            positiveCollision = obj;
         }
         else if (terminal == "Negative") {
-            negativeCollisionDetected = true;
+            negativeCollision = obj;
         }
         
     }
 
-    public void CollisionUnDetected(BatteryHole childScript, string terminal) {
+    public void CollisionUnDetected(BatteryHole childScript, string terminal, GameObject obj) {
         if (terminal == "Positive") {
-            positiveCollisionDetected = false;
+            positiveCollision = null;
         }
         else if (terminal == "Negative") {
-            negativeCollisionDetected = false;
+            negativeCollision = null;
         }
         
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class BreadboardHole : MonoBehaviour
 {
     public GameObject collided;
-    private void OnTriggerStay(Collider other) {
+    private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Lead") {
             collided = other.gameObject;
             transform.parent.GetComponent<Column>().CollisionDetected(other.gameObject);

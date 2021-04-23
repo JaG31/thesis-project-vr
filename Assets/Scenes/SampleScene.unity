@@ -369,7 +369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &4267287
 GameObject:
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &19736129
 GameObject:
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &63572344
 GameObject:
@@ -5307,7 +5307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &111679713
 GameObject:
@@ -6841,7 +6841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &153171046
 GameObject:
@@ -7515,7 +7515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &177697569
 GameObject:
@@ -7923,7 +7923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &216690819
 GameObject:
@@ -8153,7 +8153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &224809773 stripped
 GameObject:
@@ -8322,7 +8322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &228658127 stripped
 GameObject:
@@ -8406,7 +8406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &232677563
 GameObject:
@@ -8636,7 +8636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &234506736
 GameObject:
@@ -10050,7 +10050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &285483284
 GameObject:
@@ -12238,7 +12238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &341776401
 GameObject:
@@ -16855,7 +16855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &488542625
 GameObject:
@@ -17085,7 +17085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1001 &503328793
 PrefabInstance:
@@ -19075,7 +19075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &584096170
 GameObject:
@@ -19483,7 +19483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &603908339 stripped
 GameObject:
@@ -19988,7 +19988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &619383044
 GameObject:
@@ -20218,7 +20218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &624486162
 GameObject:
@@ -20626,7 +20626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &629399598
 GameObject:
@@ -21568,7 +21568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &651116077
 GameObject:
@@ -21798,7 +21798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &661756068
 GameObject:
@@ -24078,7 +24078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &737735562
 GameObject:
@@ -24842,7 +24842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &740630175
 GameObject:
@@ -24894,7 +24894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &743280278
 GameObject:
@@ -24946,7 +24946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &743779892
 GameObject:
@@ -26066,7 +26066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &754986968
 GameObject:
@@ -27186,7 +27186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &771394255
 GameObject:
@@ -27238,7 +27238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &786063007
 GameObject:
@@ -27437,6 +27437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuitCompleted: 0
+  columnPath: []
+  battery: {fileID: 1887552807}
 --- !u!54 &786380862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27583,7 +27585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &797697147
 GameObject:
@@ -30127,7 +30129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &865681853
 GameObject:
@@ -30179,7 +30181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &869977638
 GameObject:
@@ -30836,7 +30838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &897932437
 GameObject:
@@ -33247,7 +33249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &959306267
 GameObject:
@@ -35454,7 +35456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1015402923
 GameObject:
@@ -35684,7 +35686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1028345283
 GameObject:
@@ -36626,7 +36628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1050566363
 GameObject:
@@ -37776,7 +37778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1060325593
 GameObject:
@@ -38999,7 +39001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1118859097
 GameObject:
@@ -43122,7 +43124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1206650087
 GameObject:
@@ -45558,7 +45560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1260999838
 GameObject:
@@ -46500,7 +46502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1287937133
 GameObject:
@@ -46730,7 +46732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1295286662
 GameObject:
@@ -48639,7 +48641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1327232927
 GameObject:
@@ -50448,7 +50450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1393583989
 GameObject:
@@ -51212,7 +51214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1417301848
 GameObject:
@@ -51442,7 +51444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1427598571
 GameObject:
@@ -51850,7 +51852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1436465688
 GameObject:
@@ -53758,7 +53760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1485557430
 GameObject:
@@ -58438,7 +58440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1596166197
 GameObject:
@@ -58846,7 +58848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1604173243 stripped
 GameObject:
@@ -59904,7 +59906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1662355856
 GameObject:
@@ -61380,7 +61382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1717954536
 GameObject:
@@ -61432,7 +61434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1719711720
 GameObject:
@@ -65291,7 +65293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1804453719
 GameObject:
@@ -67500,7 +67502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1887552806 stripped
 GameObject:
@@ -67521,8 +67523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voltage: 5
-  positiveCollisionDetected: 0
-  negativeCollisionDetected: 0
+  positiveCollision: {fileID: 0}
+  negativeCollision: {fileID: 0}
 --- !u!114 &1887552808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67537,7 +67539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 5
   current: 0.05
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!4 &1887552809 stripped
 Transform:
@@ -67595,7 +67597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1895418195
 GameObject:
@@ -68359,7 +68361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1924421361
 GameObject:
@@ -70438,7 +70440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1962218254
 GameObject:
@@ -71202,7 +71204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &1971008399
 GameObject:
@@ -72144,7 +72146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &2012089302
 GameObject:
@@ -74510,7 +74512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &2078564420
 GameObject:
@@ -76958,7 +76960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &2136021191
 GameObject:
@@ -77010,7 +77012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voltage: 0
   current: 0
-  collisionInColumn: {fileID: 0}
+  collisionsInColumn: []
   children: []
 --- !u!1 &2136452018
 GameObject:

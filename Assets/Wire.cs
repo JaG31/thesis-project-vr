@@ -8,8 +8,8 @@ public class Wire : MonoBehaviour {
     [SerializeField] Transform bridge;
     //public Breadboard breadboard;
 
-    Column connector1Column;
-    Column connector2Column;
+    public Column connector1Column;
+    public Column connector2Column;
     Battery connector1Battery;
     Battery connector2Battery;
     
@@ -93,5 +93,13 @@ public class Wire : MonoBehaviour {
         // else if (breadboard.circuitCompleted) {
         //     connector1Column.voltage = connector2Column.voltage;
         // }
+    }
+
+    public Column[] connnected() {
+        Column[] connectedColumns = new Column[2];
+        connectedColumns[0] = connector1Column;
+        connectedColumns[1] = connector2Column;
+
+        return connectedColumns;
     }
 }
