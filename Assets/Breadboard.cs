@@ -55,7 +55,6 @@ public class Breadboard : MonoBehaviour
 						Debug.Log("RECURSED");
 						checkForCircuit(wire.connector1Column.collisionsInColumn[i]);
 					}
-					
 				}
 			}
 			else {
